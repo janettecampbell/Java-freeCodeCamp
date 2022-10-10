@@ -144,8 +144,27 @@ public class Main {
         } else {
             System.out.println("You are not a teenage or adult!");
         }
+        System.out.println();
 
         //Arrays
-        
+        String[] newArr = new String[5];
+        newArr[0] = "hello";
+        newArr[1] = "hi";
+        newArr[2] = "tim";
+        newArr[3] = "bill";
+        newArr[4] = "joe";
+
+        int[] nums = {2,3,54,6,6};
+        double[] nums2 = {2.0, 3.0};
+
+        String x4 = newArr[4];
+        System.out.println(x4);
+        int x5 = nums[4];
+        System.out.println(x5);
+        double x6 = nums2[1];
+        System.out.println(x6);
+        System.out.println();
+
+        // Loops
     }
 }
