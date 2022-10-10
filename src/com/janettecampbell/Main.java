@@ -38,7 +38,7 @@ public class Main {
         int sub = x1 - y - z;
         int mul = x1 * y * z;
         int mod = z % 7;
-        double u =  (double)z / y;
+        double u = (double) z / y;
 
         System.out.println(sum);
         System.out.println(sub);
@@ -47,7 +47,7 @@ public class Main {
         System.out.println(u);
 
         // Exponent (expression, exponent)
-        double d = Math.pow(x,y);
+        double d = Math.pow(x, y);
 
         System.out.println(d);
 
@@ -86,7 +86,7 @@ public class Main {
         boolean compare4 = x3 > y2 && z2 < y2;
         boolean compare5 = x3 > y2 || z2 < y2;
         boolean compare6 = !(x3 > y2 || z2 < y2);
-        boolean compare7 =  (x3 < y2 && y2 > z2) || (z2 + 2 < 5 || x3 + 7 > y2);
+        boolean compare7 = (x3 < y2 && y2 > z2) || (z2 + 2 < 5 || x3 + 7 > y2);
 
         System.out.println(compare);
         System.out.println(compare1);
@@ -144,8 +144,93 @@ public class Main {
         } else {
             System.out.println("You are not a teenage or adult!");
         }
+        System.out.println();
 
         //Arrays
-        
+        String[] newArr = new String[5];
+        newArr[0] = "hello";
+        newArr[1] = "hi";
+        newArr[2] = "tim";
+        newArr[3] = "bill";
+        newArr[4] = "joe";
+
+        int[] nums = {2, 3, 54, 6, 6};
+        double[] nums2 = {2.0, 3.0};
+
+        String x4 = newArr[4];
+        System.out.println(x4);
+        int x5 = nums[4];
+        System.out.println(x5);
+        double x6 = nums2[1];
+        System.out.println(x6);
+        System.out.println();
+
+        // Loops
+        // for loops
+        int[] arr = {1, 5, 7, 3, 4, 5};
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == 5) {
+                System.out.println("Found a 5 at index " + i + "!");
+            }
+        }
+        System.out.println();
+
+        // for each loop
+        int[] arr1 = {1, 5, 7, 3, 4, 5};
+        String[] names = new String[5];
+        int count = 0;
+
+        for (int element : arr1) {
+            System.out.println(element + " " + count);
+            count++;
+        }
+        System.out.println();
+
+        // for loop populate an array
+        scanner.nextLine();
+        for (int i = 0; i < names.length; i++) {
+            System.out.print("String input: ");
+            String input = scanner.nextLine().toLowerCase().trim();
+            names [i] = input;
+        }
+        System.out.println();
+
+        for (String name1 : names) {
+            System.out.println(name1);
+        }
+        System.out.println();
+
+        for (String name2 : names) {
+            System.out.println(name2);
+            if ("tim".equals(name2)) {
+                break;
+            }
+        }
+        System.out.println();
+
+        // while loops
+        System.out.print("Type a number: ");
+        int x7 = scanner.nextInt();
+        int count1 = 0;
+
+        while (x7 != 10) {
+            System.out.println("Type 10 to exit.");
+            System.out.print("Type a number: ");
+            x7 = scanner.nextInt();
+            count++;
+        }
+        System.out.println("You tried " + count1 + " times.");
+        System.out.println();
+
+        // do while loops
+        int x8;
+        do {
+            System.out.println("Type 10 to exit.");
+            System.out.print("Type a number: ");
+            x8 = scanner.nextInt();
+        } while (x != 10);
+
+        // Sets and Lists
     }
 }
