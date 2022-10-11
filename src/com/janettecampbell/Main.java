@@ -391,5 +391,32 @@ public class Main {
         Arrays.sort(x14);
 
         System.out.println(Arrays.toString((x14)));
+        System.out.println();
+
+        // Intro to Objects
+//        scanner.next();
+        int x15 = 5;
+        String h = "hello";
+        h.length(); // length is a method
+
+        tim("Tim!", 4);
+        System.out.println(add2(6));
+        System.out.println(str("hi"));
+
+    }
+
+    // Static Method
+    public static void tim(String str, int x) {
+        for (int i = 0; i < x; i++) {
+            System.out.println(str);
+        }
+    }
+
+    public static int add2(int x) {
+        return x + 2;
+    }
+
+    public static String str(String x) {
+        return x + "!";
     }
 }
