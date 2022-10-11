@@ -359,10 +359,37 @@ public class Main {
         m2.values(); // shows all the values (second entry)
 //        m2.clear(); // empties the map
         m2.isEmpty(); // tells if the map is empty or not
+        m2.remove("tim"); // removes key value pair ex. map name.remove(key);
 
         System.out.println(m2);
         System.out.println();
 
         // Maps Examples
+        Map m3 = new HashMap();
+        String str1 = "hello my name is tim and i am cool";
+
+        System.out.println(str.toCharArray());
+
+        for(char x13:str1.toCharArray()) {
+            if (m3.containsKey(x13)) {
+                int old = (int) m.get(x13);
+                m.put(x, old+1);
+            } else {
+                m.put(x13, 1);
+            }
+        }
+
+        System.out.println(m);
+        System.out.println();
+
+        int[] x14 = {-99, 5, 6, 3, 2, 1, 7, 8, 0};
+
+        Arrays.sort(x14, 1, 7);
+
+        System.out.println(Arrays.toString(x14));
+
+        Arrays.sort(x14);
+
+        System.out.println(Arrays.toString((x14)));
     }
 }
