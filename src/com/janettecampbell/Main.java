@@ -1,6 +1,6 @@
 package com.janettecampbell;
 
-import java.util.Scanner;
+import java.util.*;
 import java.util.function.DoubleToIntFunction;
 
 public class Main {
@@ -192,7 +192,7 @@ public class Main {
         for (int i = 0; i < names.length; i++) {
             System.out.print("String input: ");
             String input = scanner.nextLine().toLowerCase().trim();
-            names [i] = input;
+            names[i] = input;
         }
         System.out.println();
 
@@ -229,8 +229,101 @@ public class Main {
             System.out.println("Type 10 to exit.");
             System.out.print("Type a number: ");
             x8 = scanner.nextInt();
-        } while (x != 10);
+        } while (x8 != 10);
+        System.out.println();
 
         // Sets and Lists
+        Set<Integer> t = new HashSet<Integer>(); // Also have TreeSet, LinkedHashSet
+        t.add(5);
+        t.add(7);
+        t.add(5);
+        t.add(9);
+        t.add(-8);
+        t.remove(9);
+//        t.clear();  // Empties the set
+        t.isEmpty();
+        t.size();
+
+        boolean x9 = t.contains(5);
+        int x10 = t.size();
+
+        System.out.println(t);
+        System.out.println(x9);
+        System.out.println(x10);
+        System.out.println();
+
+        // Tree Set
+        Set<Integer> t1 = new TreeSet<Integer>(); // Has order
+        t1.add(5);
+        t1.add(7);
+        t1.add(5);
+        t1.add(9);
+        t1.add(-8);
+        t1.remove(9);
+//        t1.clear();  // Empties the set
+        t1.isEmpty();
+        t1.size();
+
+        boolean x11 = t1.contains(5);
+        int x12 = t1.size();
+
+        System.out.println(t1);
+        System.out.println(x11);
+        System.out.println(x12);
+        System.out.println();
+
+//        // LinkedHashSet - Do more research
+//        Set<Integer> t2 = new LinkedHashSet<Integer>();
+//        t2.add(5);
+//        t2.add(7);
+//        t2.add(5);
+//        t2.add(9);
+//        t2.add(-8);
+//        t2.remove(9);
+////        t2.clear();  // Empties the set
+//        t2.isEmpty();
+//        t2.size();
+//
+//        boolean x13 = t2.contains(5);
+//        int x14 = t2.size();
+//
+//        System.out.println(t2);
+//        System.out.println(x13);
+//        System.out.println(x14);
+//        System.out.println();
+
+        // Lists
+        // ArrayList
+        ArrayList<Integer> t3 = new ArrayList<Integer>();
+        t3.add(1);
+        t3.add(2);
+        t3.add(1);
+        t3.add(2);
+        t3.add(1);
+        t3.add(2);
+        t3.get(0); // array.get(index)
+        t3.set(1, 5); // array.set(index, element) ex. change at index 1 is 5.
+        t3.size();
+        t3.subList(1, 3); // Get elements within a certain range ex. array.subList(starting index, ending index not included)
+
+        System.out.println(t3.subList(1, 3));
+        System.out.println();
+
+        // LinkedList - Do more research
+//        LinkedList<Integer> t4 = new LinkedList<Integer>();
+//        t4.add(1);
+//        t4.add(2);
+//        t4.add(1);
+//        t4.add(2);
+//        t4.add(1);
+//        t4.add(2);
+//        t4.get(0); // array.get(index)
+//        t4.set(1, 5); // array.set(index, element) ex. change at index 1 is 5.
+//        t4.size();
+//        t4.subList(1, 3); // Get elements within a certain range ex. array.subList(starting index, ending index not included)
+//
+//        System.out.println(t4.subList(1, 3));
+//        System.out.println();
+
     }
 }
