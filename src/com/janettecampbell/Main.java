@@ -402,7 +402,22 @@ public class Main {
         tim("Tim!", 4);
         System.out.println(add2(6));
         System.out.println(str("hi"));
+        System.out.println();
 
+        Dog tim1 = new Dog("tim", 4);
+        tim1.speak();
+        Dog bill = new Dog("bill", 7);
+        bill.speak();
+        Dog bob = new Dog("bob", 11);
+        bob.speak();
+
+        tim1.speak();
+        int x16 = tim1.getAge();
+        System.out.println(x16);
+
+        tim1.setAge(10);
+        tim1.speak();
+//        tim1.add2(); // does not work because it's a private method
     }
 
     // Static Method
