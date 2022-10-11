@@ -325,5 +325,44 @@ public class Main {
 //        System.out.println(t4.subList(1, 3));
 //        System.out.println();
 
+        // Maps & HashMaps
+        // HashMap
+        Map m = new HashMap(); // HashMap does not retain order
+
+        m.put("tim", 5); // name of map.put(key, value);
+        m.put("joe", "x");
+        m.put(11, 999);
+
+        System.out.println(m);
+        System.out.println(m.get("tim")); // name of map.(key)
+        System.out.println();
+
+        // HashMap
+        Map m1 = new TreeMap(); // keeps in a sorted order, not the order entered
+
+        m1.put("tim", 5); // keys must be of the same data type
+        m1.put("joe", "x");
+//        m1.put(11, 999);
+
+        System.out.println(m1);
+        System.out.println();
+
+        // LinkedHashMap
+        Map m2 = new LinkedHashMap(); // keeps order entered in
+
+        m2.put("tim", 5);
+        m2.put("joe", "x");
+        m2.put("a", "b");
+//        m2.put(11, 999);
+        m2.containsValue("b"); // checks if value exists in map (second entry)
+        m2.containsKey("tim"); // checks if key value exists (first entry)
+        m2.values(); // shows all the values (second entry)
+//        m2.clear(); // empties the map
+        m2.isEmpty(); // tells if the map is empty or not
+
+        System.out.println(m2);
+        System.out.println();
+
+        // Maps Examples
     }
 }
