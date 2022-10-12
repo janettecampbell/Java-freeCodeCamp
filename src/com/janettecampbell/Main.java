@@ -468,6 +468,16 @@ public class Main {
         // class inside a method
         OuterClass2 out2 = new OuterClass2();
         out2.inner();
+        System.out.println();
+
+        // Interfaces
+        Car ford = new Car();
+        ford.speedUp(10);
+        ford.changeGear(2);
+        ford.display();
+        System.out.println();
+        int x17 = Vehicle.math(5);
+        System.out.println(x17);
     }
 
     // Static Method

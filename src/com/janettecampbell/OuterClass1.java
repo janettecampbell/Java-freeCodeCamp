@@ -8,7 +8,7 @@ public class OuterClass1 {
     }
 
     public void inner() {
-        OuterClass.InnerClass in = new OuterClass.InnerClass();
+        InnerClass in = new InnerClass();
         in.display();
     }
 }
