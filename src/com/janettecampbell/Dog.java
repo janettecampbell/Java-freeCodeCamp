@@ -2,10 +2,8 @@ package com.janettecampbell;
 
 public class Dog {
 
-    private String name;
-    private int age;
-    add2();
-    speak();
+    protected String name;
+    protected int age;
 
     public Dog(String name, int age) {
         this.name = name;

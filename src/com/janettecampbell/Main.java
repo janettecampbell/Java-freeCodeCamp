@@ -418,6 +418,16 @@ public class Main {
         tim1.setAge(10);
         tim1.speak();
 //        tim1.add2(); // does not work because it's a private method
+
+        Cat tim2 = new Cat("tim", 18, 100);
+        tim2.speak();
+
+        Cat tim3 = new Cat("tim", 18, 100);
+        Cat bob1 = new Cat("bob", 7);
+        Cat joe = new Cat("joe");
+        tim3.speak();
+        bob1.speak();
+        joe.speak();
     }
 
     // Static Method
