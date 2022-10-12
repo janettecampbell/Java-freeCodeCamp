@@ -418,6 +418,42 @@ public class Main {
         tim1.setAge(10);
         tim1.speak();
 //        tim1.add2(); // does not work because it's a private method
+
+        Cat tim2 = new Cat("tim", 18, 100);
+        tim2.speak();
+
+        Cat tim3 = new Cat("tim", 18, 100);
+        Cat bob1 = new Cat("bob", 7);
+        Cat joe = new Cat("joe");
+        tim3.speak();
+        bob1.speak();
+        joe.speak();
+        System.out.println();
+
+        // Static keyword
+        Dog tim4 = new Dog("tim", 9);
+        Dog bill1 = new Dog("bill", 10);
+
+        System.out.println(Dog.count);
+
+        Dog.count = 7; // changes Dog.count manually to set number
+        System.out.println(tim4.count);
+        System.out.println(bill1.count);
+        System.out.println();
+
+        Student joe1 = new Student("Joe");
+        Student bill2 = new Student("Bill");
+        Student tim5 = new Student("Tim");
+
+        System.out.println(joe1.equals(bill2));
+        System.out.println();
+
+        // Check if names are greater or less than another name
+        System.out.println(joe1.compareTo(bill2) > 0); // true
+        System.out.println(joe1.compareTo(tim5) > 0); //false
+
+
+
     }
 
     // Static Method
