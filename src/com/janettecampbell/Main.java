@@ -468,7 +468,6 @@ public class Main {
         // class inside a method
         OuterClass2 out2 = new OuterClass2();
         out2.inner();
-
     }
 
     // Static Method
