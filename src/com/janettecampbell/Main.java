@@ -451,8 +451,23 @@ public class Main {
         // Check if names are greater or less than another name
         System.out.println(joe1.compareTo(bill2) > 0); // true
         System.out.println(joe1.compareTo(tim5) > 0); //false
+        System.out.println();
 
+        // Inner Classes
+        // private keyword
+        OuterClass out = new OuterClass();
+        out.inner();
 
+        // public keyword
+        OuterClass1 out1 = new OuterClass1();
+        OuterClass1.InnerClass in = out1.new InnerClass();
+
+        in.display();
+        System.out.println();
+
+        // class inside a method
+        OuterClass2 out2 = new OuterClass2();
+        out2.inner();
 
     }
 
